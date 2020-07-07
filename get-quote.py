@@ -1,11 +1,18 @@
-def primarily():
-   print("Keep it logically awesome.")
+import random
 
-  #f = open("quotes.txt")
-  #quotes = f.readlines()
-  #f.close()
+#def primarily():
+  # print("Keep it logically awesome.")
 
-  #print(quotes)
+f = open("quotes.txt")
+quotes = f.readlines()
+f.close()
 
-if __name__== "__main__":
-  primarily()
+
+last = len(quotes)
+rnd = random.randint(0, last)
+
+
+print(quotes[rnd])
+
+#if __name__== "__main__":
+#  primarily()
